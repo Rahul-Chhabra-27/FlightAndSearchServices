@@ -1,0 +1,10 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": null,
+    "database": "Airline_Booking_db",
+    "host": "127.0.0.1",
+    "port":5431,
+    "dialect": "postgres"
+  }
+}
