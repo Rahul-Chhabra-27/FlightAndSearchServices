@@ -17,7 +17,7 @@ const setupAndStartServer = async () => {
 
         const repo = new CityRepository();
         try {
-            await repo.createCity({ name:"Agra" })
+            //await repo.createCity({ name:"Agra" })
             // await repo.deleteCity(1);
         }
         catch(error) {
