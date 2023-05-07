@@ -11,7 +11,8 @@ class CityService {
             const city = await this.cityRepository.createCity({name});
             return city;
         } catch (error) {
-            console.log("Error inside service layer")
+            console.log("Error inside service layer");
+            throw {error}
         }
     }
 
@@ -21,6 +22,7 @@ class CityService {
           return city;
         } catch (error) {
           console.log("Error inside service layer");
+          throw {error}
         }
     }
 
@@ -30,6 +32,7 @@ class CityService {
           return city;
         } catch (error) {
           console.log("Error inside service layer");
+          throw {error}
         }
     }
 
@@ -39,6 +42,7 @@ class CityService {
           return city;
         } catch (error) {
           console.log("Error inside service layer");
+          throw {error}
         }
     } 
 }

@@ -81,3 +81,7 @@ const updateCity = async(req,res) => {
       });
     }  
 } 
+
+module.exports = {
+    createCity,updateCity,getCity,deleteCity
+}
