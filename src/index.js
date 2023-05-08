@@ -5,6 +5,8 @@ const CityRepository = require('./repository/city-repository');
 
 const router = require('./routes/index');
 
+const {City, Airport } = require('./models/index');
+
 const setupAndStartServer = async () => {
 
     const app = express();
@@ -18,6 +20,10 @@ const setupAndStartServer = async () => {
 
         const repo = new CityRepository();
         try {
+            const airports = await Airport.findAll({
+                include :City
+            });
+            console.log(airports);
             //await repo.createCity({ name:"Agra" })
             // await repo.deleteCity(1);
         }
